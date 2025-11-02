@@ -1,0 +1,58 @@
+<!-- Room 3 - Minimalist Loft -->
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="minWall" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f1f5f9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#cbd5e1;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="minFloor" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e5e7eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9ca3af;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#minWall)"/>
+  
+  <!-- Floor -->
+  <rect x="0" y="230" width="400" height="70" fill="url(#minFloor)"/>
+  
+  <!-- Floor Lines (modern touch) -->
+  <line x1="0" y1="245" x2="400" y2="245" stroke="#6b7280" stroke-width="1" opacity="0.3"/>
+  <line x1="0" y1="260" x2="400" y2="260" stroke="#6b7280" stroke-width="1" opacity="0.3"/>
+  <line x1="0" y1="275" x2="400" y2="275" stroke="#6b7280" stroke-width="1" opacity="0.3"/>
+  
+  <!-- Large Windows -->
+  <rect x="40" y="30" width="120" height="160" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2"/>
+  <line x1="100" y1="30" x2="100" y2="190" stroke="#0ea5e9" stroke-width="1"/>
+  <line x1="40" y1="110" x2="160" y2="110" stroke="#0ea5e9" stroke-width="1"/>
+  
+  <!-- Modern Platform Bed -->
+  <rect x="250" y="180" width="120" height="60" fill="#1f2937" rx="2"/>
+  <rect x="255" y="175" width="110" height="8" fill="#374151"/>
+  
+  <!-- Floating Shelves -->
+  <rect x="280" y="80" width="80" height="4" fill="#374151"/>
+  <rect x="280" y="100" width="80" height="4" fill="#374151"/>
+  <rect x="280" y="120" width="80" height="4" fill="#374151"/>
+  
+  <!-- Minimalist Desk -->
+  <rect x="180" y="140" width="60" height="3" fill="#374151"/>
+  <rect x="178" y="140" width="2" height="40" fill="#374151"/>
+  <rect x="240" y="140" width="2" height="40" fill="#374151"/>
+  
+  <!-- Single Chair -->
+  <circle cx="210" cy="160" r="6" fill="#ef4444"/>
+  <rect x="208" y="165" width="4" height="15" fill="#dc2626"/>
+  
+  <!-- Modern Art -->
+  <rect x="200" y="50" width="40" height="60" fill="#6366f1" opacity="0.8"/>
+  <rect x="205" y="55" width="30" height="50" fill="#4f46e5" opacity="0.6"/>
+  
+  <!-- Accent Lines -->
+  <line x1="20" y1="200" x2="60" y2="200" stroke="#ef4444" stroke-width="3"/>
+  <line x1="340" y1="200" x2="380" y2="200" stroke="#10b981" stroke-width="3"/>
+  
+  <!-- Geometric elements -->
+  <polygon points="320,40 340,60 320,80 300,60" fill="#fbbf24" opacity="0.7"/>
+</svg>
