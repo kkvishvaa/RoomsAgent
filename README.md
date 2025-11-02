@@ -1,73 +1,74 @@
-# Welcome to your Lovable project
+# CoLive SG – Premium Co-Living in Singapore
 
-## Project info
+Welcome to CoLive SG, a modern co-living platform for professionals seeking premium living spaces in Singapore. This project features a beautiful, mobile-responsive website built with React, TypeScript, Vite, and Tailwind CSS.
 
-**URL**: https://lovable.dev/projects/1e46742b-6d20-485f-98cb-53a7b8ff4c3e
+## Features
+- 🏠 Browse 250+ premium rooms with detailed amenities
+- 🔍 Advanced room filtering by type, price, district, and more
+- 💬 Embedded AI ChatBot for instant support
+- 🌈 Modern, animated UI with custom SVG illustrations
+- 📱 Fully mobile responsive design
+- 🛏️ Custom branding and logo integration
+- ⚡ Fast performance with Vite
 
-## How can I edit this code?
+## Tech Stack
+- **React** + **TypeScript**
+- **Vite** (build tool)
+- **Tailwind CSS** (utility-first styling)
+- **shadcn/ui** (UI components)
+- **Lucide React Icons**
+- **n8n Chat** (embedded chatbot)
+- **CSV data** for room listings
 
-There are several ways of editing your application.
+## Getting Started
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+2. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+3. **Open your browser:**
+   Visit [http://localhost:5173](http://localhost:5173)
 
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/1e46742b-6d20-485f-98cb-53a7b8ff4c3e) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+## Project Structure
+```
+premium-co-living-sg/
+├── public/
+│   ├── logo.svg
+│   ├── data/
+│   │   └── properties.csv
+├── src/
+│   ├── components/
+│   │   ├── Navbar.tsx
+│   │   ├── Hero.tsx
+│   │   ├── Features.tsx
+│   │   ├── RoomsShowcase.tsx
+│   │   ├── RoomCard.tsx
+│   │   ├── RoomFilters.tsx
+│   │   ├── ChatBot.tsx
+│   │   └── ...
+│   ├── pages/
+│   │   ├── Index.tsx
+│   │   └── NotFound.tsx
+│   ├── assets/
+│   ├── api/
+│   ├── types/
+│   └── index.css
+├── package.json
+├── vite.config.ts
+└── README.md
 ```
 
-**Edit a file directly in GitHub**
+## Customization
+- **Branding:** Update `public/logo.svg` and colors in `src/index.css`.
+- **Room Data:** Edit `public/data/properties.csv` for your listings.
+- **ChatBot:** Configure webhook in `src/components/ChatBot.tsx`.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## License
+MIT
 
-**Use GitHub Codespaces**
+---
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/1e46742b-6d20-485f-98cb-53a7b8ff4c3e) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Made with ❤️ for the Singapore co-living community.
