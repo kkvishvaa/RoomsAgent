@@ -47,13 +47,13 @@ export const RoomCard = ({ property, index }: RoomCardProps) => {
 
   return (
     <Card 
-      className="group overflow-hidden border-0 hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 animate-fade-in bg-gradient-to-br from-slate-50 via-white to-slate-100 backdrop-blur-sm"
+      className="group overflow-hidden border-0 hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 animate-fade-in bg-gradient-to-br from-slate-50 via-white to-slate-100 backdrop-blur-sm rounded-3xl sm:rounded-2xl mx-2 sm:mx-0"
       style={{ 
         animationDelay: `${index * 0.1}s`,
         boxShadow: '0 0 0 1px rgba(148, 163, 184, 0.1), 0 4px 6px -1px rgba(0, 0, 0, 0.1)',
       }}
     >
-      <div className="relative h-56 overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-100">
+  <div className="relative h-56 overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-100 rounded-t-3xl sm:rounded-t-2xl">
         {/* Cool animated background pattern */}
         <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-purple-500/5 to-pink-500/5"></div>
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iZ3JpZCIgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj48cGF0aCBkPSJNIDIwIDAgTCAwIDAgMCAyMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJyZ2JhKDU5LCAxMzAsIDI0NiwgMC4xKSIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyaWQpIiAvPjwvc3ZnPg==')] opacity-20"></div>
@@ -94,7 +94,7 @@ export const RoomCard = ({ property, index }: RoomCardProps) => {
         </div>
       </div>
 
-      <CardContent className="p-6 bg-gradient-to-br from-white to-slate-50">
+  <CardContent className="p-6 bg-gradient-to-br from-white to-slate-50 rounded-b-3xl sm:rounded-b-2xl">
         <div className="mb-4">
           <h3 className="text-xl font-bold mb-2 line-clamp-1 group-hover:text-blue-600 text-slate-800 transition-colors duration-300">
             {property.property_name}

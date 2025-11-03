@@ -4,26 +4,26 @@ import { createChat } from '@n8n/chat';
 
 export const ChatBot = () => {
   useEffect(() => {
-    createChat({
-      webhookUrl: 'https://n8n.makeatron.in/webhook/f99cc6a4-f693-4947-b2fb-3dcd560de63c/chat',
-      target: '#n8n-chat',
-      mode: 'window',
-      showWelcomeScreen: true,
-      initialMessages: [
-        'Hello! How can I help you with CoLive SG today?',
-        'I can assist you with room availability, amenities, pricing, and booking information.'
-      ],
-      i18n: {
-        en: {
-          title: 'CoLive Assistant',
-          subtitle: 'We\'re here to help!',
-          footer: '',
-          getStarted: 'New Conversation',
-          inputPlaceholder: 'Type your message...',
-          closeButtonTooltip: 'Close chat',
+      createChat({
+        webhookUrl: 'https://n8n.makeatron.in/webhook/f99cc6a4-f693-4947-b2fb-3dcd560de63c/chat',
+        target: '#n8n-chat',
+        mode: 'window',
+        showWelcomeScreen: false,
+        initialMessages: [
+          'Hello! How can I help you with CoLive SG today?',
+          'I can assist you with room availability, amenities, pricing, and booking information.'
+        ],
+        i18n: {
+          en: {
+            title: 'CoLive Assistant',
+            subtitle: 'We\'re here to help!',
+            footer: '',
+            getStarted: 'New Conversation',
+            inputPlaceholder: 'Type your message...',
+            closeButtonTooltip: 'Close chat',
+          },
         },
-      },
-    });
+      });
   }, []);
 
   return (
