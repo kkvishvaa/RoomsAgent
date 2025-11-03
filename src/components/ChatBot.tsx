@@ -5,7 +5,8 @@ import { createChat } from '@n8n/chat';
 export const ChatBot = () => {
   useEffect(() => {
       createChat({
-        webhookUrl: 'https://n8n.makeatron.in/webhook/f99cc6a4-f693-4947-b2fb-3dcd560de63c/chat',
+        webhookUrl: 'https://n8n.makeatron.in/webhook/50d1559f-37f3-4455-9cc5-ce493234c715/chat',
+        
         target: '#n8n-chat',
         mode: 'window',
         showWelcomeScreen: false,
